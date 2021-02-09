@@ -13,6 +13,7 @@ namespace ClassDemo
             nameOfStaff = firstName + " " + lastName;
             Console.WriteLine("Full name of a created object: " + nameOfStaff);
         }
+        public static string staffMessage = "This is a static message";
         public string nameOfStaff;
         private const int hourlyRate = 30;
         private int hWorked;
@@ -63,8 +64,7 @@ namespace ClassDemo
     {
         static void Main(string[] args)
         {
-                       //Console.WriteLine("Hello World!");
-
+            Console.WriteLine(Staff.staffMessage);
             Staff dennis = new Staff("Dennis", "Rodman");
             dennis.HoursWorked = 20;
             Console.WriteLine("Dennis' hours worked: " + dennis.HoursWorked);
