@@ -56,7 +56,7 @@ namespace ClassDemo
         {
             //Console.WriteLine("Hello World!");
             Staff dennis = new Staff("Dennis", "Rodman");
-            dennis.HoursWorked = 12;
+            dennis.HoursWorked = 15;
             Console.WriteLine("Dennis' pay: " + dennis.CalculatePay());
         }     
     }
