@@ -53,13 +53,13 @@ namespace ClassDemo
         }
     } //end of class Staff
 
-    //static class printMessage {
-    //    static int number = 10;
-    //    static public printNumber {
-    //        //dslfjdslk
-    //    }
-
-    //}
+    static class printMessage
+    {
+        public static int number = 10;
+        public static void printNumber() {
+            Console.WriteLine("static class printMessage: " + number);
+        }
+    }
     class Program
     {
         static void Main(string[] args)
@@ -69,6 +69,7 @@ namespace ClassDemo
             dennis.HoursWorked = 20;
             Console.WriteLine("Dennis' hours worked: " + dennis.HoursWorked);
             Console.WriteLine("Dennis' pay: " + dennis.CalculatePay());
+            printMessage.printNumber();
         } //end of method Main
     } //end of class Program
 } // end of namespace class Demo
